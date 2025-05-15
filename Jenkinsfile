@@ -10,7 +10,7 @@ pipeline {
 	}
         stage('Käivita konteiner') {
             steps {
-                sh 'docker run -d -p 3000:3000 --name sweet-container'
+                sh 'docker run -d -p 3000:3000 --name sweet-container sweet-app'
 		}        
 	}
 
